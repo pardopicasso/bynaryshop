@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BynaryShop</title>
+    <link rel="stylesheet" href="pagina_principal.css">
+</head>
+<body>
+    <h1>Bienvenido a BynaryShop</h1>
+
+    <div id="product-section" style="display: none;">
+        <h2>Productos</h2>
+        <div id="product-list"></div>
+    </div>
+
+    <!-- Carrito de compras -->
+    <div id="cart-section" style="display: none;">
+        <h2>Carrito de Compras</h2>
+        <ul id="cart-items"></ul>
+        <button onclick="buyProducts()">Comprar</button>
+    </div>
+
+    <!-- Sección de vendedor (visible para vendedores) -->
+    <div id="seller-section" style="display: none;">
+        <h2>Añadir Producto</h2>
+        <input type="text" id="product-name" placeholder="Nombre del Producto">
+        <input type="number" id="product-price" placeholder="Precio">
+        <input type="text" id="product-image" placeholder="URL de la imagen">
+        <button onclick="addProduct()">Añadir Producto</button>
+    </div>
+
+    <!-- Sección de administrador (visible para admin) -->
+    <div id="admin-section" style="display: none;">
+        <h2>Panel de Administrador</h2>
+        <button onclick="deleteUser()">Eliminar Usuario</button>
+        <button onclick="deleteProduct()">Eliminar Producto</button>
+    </div>
+
+    <script src="pagina_principal.js"></script>
+</body>
+</html>
